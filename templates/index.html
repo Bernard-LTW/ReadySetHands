@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Queue</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        function raiseHand() {
+            var name = document.getElementById('name').value;
+            socket.emit('raise_hand', {name: name});
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <button onclick="raiseHand()">Raise Hand</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Host Panel</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        socket.on('update_queue', function(data) {
+            updateQueue(data.queue);
+        });
+
+        function updateQueue(queue) {
+            var list = '<ol>';
+            for (var i = 0; i < queue.length; i++) {
+                list += '<li>' + queue[i] + '</li>';
+            }
+            list += '</ol>';
+            document.getElementById('queue').innerHTML = list;
+        }
+    </script>
+</head>
+<body>
+    <h1>Players Queue</h1>
+    <div id="queue"></div>
+</body>
+</html>
