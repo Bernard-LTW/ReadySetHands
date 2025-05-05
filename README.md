@@ -1,6 +1,9 @@
 # ReadySetHands 🖐️
+![Ready Set Hands](https://github.com/user-attachments/assets/87f9031d-14ba-4875-8d43-df74657766df)
 
-A real-time virtual hand-raising system for classrooms and educational settings. This web application allows teachers to create sessions and students to join them, providing an organized way to manage student participation.
+![Screenshot 2025-05-05 at 17 19 00](https://github.com/user-attachments/assets/86d10007-9064-40c9-a205-5014bfb0ce19)
+
+A real-time virtual hand-raising system for classrooms and educational settings. This web application allows teachers to create sessions and students to join them, providing an organized way to manage student participation. No more arguing!!!!
 
 ## Features
 
