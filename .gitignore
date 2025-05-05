@@ -34,3 +34,5 @@ pip-selfcheck.json
 *.iml
 out
 gen
+
+*.db
